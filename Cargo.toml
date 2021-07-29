@@ -1,25 +1,25 @@
 [package]
-name = "fpe"
+name = "fpe-v04"
 version = "0.4.0"
 authors = ["Jack Grigg <thestr4d@gmail.com>"]
 license = "MIT/Apache-2.0"
 edition = "2018"
-description = "Format-preserving encryption"
+description = "Format-preserving encryption (temporary fork)"
 documentation = "https://docs.rs/fpe/"
 homepage = "https://github.com/str4d/fpe"
-repository = "https://github.com/str4d/fpe"
+repository = "https://github.com/kornelski/fpe"
 
 [dependencies]
-aes = "0.7"
+aes = "0.7.4"
 block-modes = "0.8"
 num-bigint = "0.4"
 num-integer = "0.1"
 num-traits = "0.2"
 
 [dev-dependencies]
-aes-old = { package = "aes", version = "0.3" }
-binary-ff1 = "0.1"
-criterion = "0.3"
+aes-old = { package = "aes", version = "0.5" }
+binary-ff1 = { git = "https://github.com/saleemrashid/binary-ff1" }
+criterion = { version = "0.3", features = ["html_reports"] }
 criterion-cycles-per-byte = "0.1"
 
 [[bench]]

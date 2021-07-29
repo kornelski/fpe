@@ -226,7 +226,7 @@ mod tests {
             AES128,
             AES192,
             AES256,
-        };
+        }
 
         struct TestVector {
             aes: AesType,
@@ -235,7 +235,7 @@ mod tests {
             tweak: Vec<u8>,
             pt: Vec<u16>,
             ct: Vec<u16>,
-        };
+        }
 
         let test_vectors = vec![
             // From https://csrc.nist.gov/CSRC/media/Projects/Cryptographic-Standards-and-Guidelines/documents/examples/FF1samples.pdf
@@ -540,7 +540,7 @@ mod tests {
             ct: Vec<u8>,
             bpt: Vec<u8>,
             bct: Vec<u8>,
-        };
+        }
 
         let test_vectors = vec![
             // Zcash test vectors
